@@ -2,7 +2,7 @@ extends Node
 
 var current_scene = null
 var rot
-
+var speed = 40
 
 func _ready():
 	var root = get_scene().get_root()
