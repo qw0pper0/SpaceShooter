@@ -5,7 +5,7 @@ var rot
 var speed = 40
 
 func _ready():
-	var root = get_scene().get_root()
+	var root = get_tree().get_root()
 	current_scene = root.get_child( root.get_child_count() -1 )
 	#score=0
 
@@ -21,7 +21,7 @@ func goto_scene(scene):
 # load and add new scene to root
 	var s = ResourceLoader.load(scene)
 	current_scene = s.instance()
-	get_scene().get_root().add_child(current_scene)
+	get_tree().get_root().add_child(current_scene)
 	
 func eightway(): # full eight-way movement
 
