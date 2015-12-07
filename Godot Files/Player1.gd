@@ -1,16 +1,18 @@
 
 extends RigidBody2D
 var rot = 0
+
 # member variables here, example:
 # var a=2
 # var b="textvar"
 func eightway(delta): # full eight-way set_posment
 
     if(Input.is_action_pressed("Wkey")): # set forward set_posments
-        get_node("LeftJet/Particles2D").set_amount(0)
-        
+        #get_node("LeftJet/Particles2D").set_amount(0)
+        get_node("LeftJet/Particles2D").set_emitting( true )
+
         if(Input.is_action_pressed("Akey")): # diagonally left-forward
-            set_pos(  get_pos()+Vector2(-150*delta,-150*delta))
+            set_pos(  get_pos()+Vector2(-150*delta,-150*delta))           
         elif(Input.is_action_pressed("Dkey")): # diagonally right-forward
             set_pos(  get_pos()+Vector2(150*delta,-150*delta)) 
 

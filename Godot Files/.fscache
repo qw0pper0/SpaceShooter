@@ -1,25 +1,31 @@
-::res://::1449182656
-Controls.gd::GDScript::1449115625::
+::res://::1449439344
+Controls.gd::GDScript::1449193047::
 Controls.scn::PackedScene::1449113394::
 Enemy.scn::PackedScene::1449099731::
+FlameParticle.scn::PackedScene::1449202442::
 GLaser.tex::ImageTexture::1449100093::texture_2d<>../Sprites/Player/GLaser.png<>37c0c520242eee4589be266a6707a309<>1449100063
 Glaser.scn::PackedScene::1449100144::
 GreenFighter.tex::ImageTexture::1449094062::texture_2d<>../Sprites/Player/GreenFighter.png<>90c69b1882c8f35309a0dfc939573bbc<>1449025207
 Laser.tex::ImageTexture::1449100101::texture_2d<>../Sprites/Enemy/Laser.png<>b78b306894558d17681473a5f1a1ce36<>1449099987
 Level1.scn::PackedScene::1449113952::
-MainMenu.gd::GDScript::1449115625::
-MainMenu.scn::PackedScene::1449115622::
+MainMenu.gd::GDScript::1449193047::
+MainMenu.scn::PackedScene::1449193047::
 MainMenu.tex::ImageTexture::1449096555::texture_2d<>../Sprites/MainMenu.png<>02608ab081fd145cdab8f89ec864098c<>1449096516
 MainMenu2.tex::ImageTexture::1449097297::texture_2d<>../Sprites/MainMenu2.png<>74be810ad6a04742912e0b2eeff12eb1<>1449097265
-Player1.gd::GDScript::1449115625::
-Player1.scn::PackedScene::1449114082::
+Particletest1.tex::ImageTexture::1449188953::texture_2d<>../Sprites/Particles/Particletest1.png<>78e366c1c3d701ac5088bd7f891e88ee<>1449184312
+Particletest2.tex::ImageTexture::1449189412::texture_2d<>../Sprites/Particles/Particletest2.png<>399e0031620f2d9e8e80df7159220b50<>1449189399
+Particletest3.tex::ImageTexture::1449189534::texture_2d<>../Sprites/Particles/Particletest3.png<>536d1f64df60d2f7a8385c92af6bf5b9<>1449189506
+Particletest4.tex::ImageTexture::1449189701::texture_2d<>../Sprites/Particles/Particletest4.png<>5a7fd9b33e901fa63dcd0e55d6157a65<>1449189693
+Player1.gd::GDScript::1449202434::
+Player1.scn::PackedScene::1449202434::
 Rlaser.scn::PackedScene::1449100199::
 Space22.fnt::Font::1449096938::font<>../../../../../../Downloads/space_1/space Xrebron.ttf<>e938400f53ed6698049fa334a71754e7<>1449096823
 Space30.fnt::Font::1449096999::font<>../../../../../../Downloads/space_1/space Xrebron.ttf<>e938400f53ed6698049fa334a71754e7<>1449096823
 Space40.fnt::Font::1449097034::font<>../../../../../../Downloads/space_1/space Xrebron.ttf<>e938400f53ed6698049fa334a71754e7<>1449096823
 Space70.fnt::Font::1449097609::font<>../../../../../../Downloads/space_1/space Xrebron.ttf<>e938400f53ed6698049fa334a71754e7<>1449096823
 controls.tex::ImageTexture::1449099581::texture_2d<>../Sprites/controls.png<>c6e95805ddc3b377699df83d8f8e3565<>1449098480
-global.gd::GDScript::1449115625::
+explosion.scn::PackedScene::1449189992::
+global.gd::GDScript::1449193047::
 icon.png::ImageTexture::1449093863::
 redfighter0006.tex::ImageTexture::1449099608::texture_2d<>../Sprites/Player/redfighter0006.png<>81dad0cd45c6bfa10994b6035c4cf175<>1449024930
 stars-galaxies-nasa-nebulae-hubble-1280x720-wallpaper.tex::ImageTexture::1449100397::texture_2d<>../Sprites/BackGround/stars-galaxies-nasa-nebulae-hubble-1280x720-wallpaper.jpg<>14ea01545f13463ab5e79372a7279d77<>1449100371
