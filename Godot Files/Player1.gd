@@ -1,6 +1,9 @@
 
 extends RigidBody2D
 var rot = 0
+export (int)var health 
+var asteroid_class = preload("res://M1.gd")
+
 #<<<<<<< HEAD
 #=======
 #create a speed variable so you can easily change the speed. This could even be a powerup
@@ -71,12 +74,38 @@ func _ready():
 	#process events as well
 	set_process_input(true)
 	pass
-	
-#when an evet occurs less a button press
+#when an event occurs less a button press
+
+
 func _input(event):
 	#Did you make this action? Maybe make a new one?
-	if (Input.is_action_pressed("MouseL")):
-		get_node("Weapon").fire(get_rot(),get_node("Weapon").get_global_pos(),get_parent())
-		#I'm firing my laser
+	if(event.type == 3):
+		if (Input.is_action_pressed("MouseL")):
+			get_node("Weapon").fire((get_viewport().get_mouse_pos()-get_pos()).normalized(),get_node("Weapon").get_global_pos(),get_parent())
+			#I'm firing my laser
+		if (event.is_action("MouseR")):
+			if(event.is_pressed()):
+				print ("StartCharge")
+				get_node("Weapon").startCharge()
+			else:
+				get_node("Weapon").fireCharge((get_viewport().get_mouse_pos()-get_pos()).normalized(),get_node("Weapon").get_global_pos(),get_parent())
+				print ("FireCharge")
+		
+func _integrate_forces(s):
+	if( s.get_contact_count() >0 ):
+		print (s.get_contact_count())
+		for c in range(s.get_contact_count() ):
+			var cc = s.get_contact_collider_object(c)
+			if (cc and cc extends asteroid_class and cc.is_visible() ):
+				cc.hide()
+				cc.queue_free()
+				print ("hit")
+				#emit_signal ( "pop" )
+				#var p = particles.instance()
+				#get_parent().add_child(p)
+				#p.set_pos( get_pos() )
+				#get_node("Sprite").get_node("anim").play("pop")
+
+
 		
 # we should create different weapons to attach to the ship and fire the weapon instead, but this is a good start
